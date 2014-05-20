@@ -30,8 +30,17 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
 
-## Write a short comment describing this function
 cacheSolve <- function(x) {
+    # return the inverse of x, where x is a cachable data structure
+    # created with makeCacheMatrix. If the matrix hasn't changed the
+    # result is returned from the cache
+    #
+    # Args:
+    #   x: an instance of makeCacheMatrix containing the matrix to be
+    #   inverted.
+    #
+    # Returns:
+    #   The inverse of the matrix (calculated using solve())
 
     xinverse <- x$getinverse()
     if(!is.null(xinverse)) {

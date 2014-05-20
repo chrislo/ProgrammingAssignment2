@@ -1,5 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+# Calculating the inverse of a matrix can be computationally
+# costly. The function makeCacheMatrix is a special data structure
+# which stores a matrix x and its inverse. cacheSolve calculates the
+# inverse of the matrix stored in this data structure, but returns the
+# value in the cache if the inverse has already been calculated.
 
 makeCacheMatrix <- function(x = matrix()) {
     # Creates a data structure which caches the inverse of the matrix
